@@ -44,7 +44,7 @@ int main(int argc, char** argv)
     motor_command_publisher = n.advertise<geometry_msgs::Twist>("/cmd_vel", 10);
 
     // TODO: Define a drive /ball_chaser/command_robot service with a handle_drive_request callback function
- 	ros::ServiceServer service = n.advertiseService("/drive_bot/command_robot",
+ 	ros::ServiceServer service = n.advertiseService("/ball_chaser/command_robot",
 handle_drive_request);
 
     ROS_INFO("Ready to send drive commands");
